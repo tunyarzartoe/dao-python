@@ -1,3 +1,4 @@
+# 最大値と最小値を求める問題
 n = int(input())
 a = [int(x) for x in input().split()]
 

@@ -1,4 +1,4 @@
-# Counting Occurrences
+# 数列Aにkが何個含まれているかを求める問題
 # 入力を受け取る
 n = int(input())  # 要素数
 A = list(map(int, input().split()))  # 数列A

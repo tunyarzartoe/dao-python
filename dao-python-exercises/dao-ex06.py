@@ -1,3 +1,4 @@
+# 挿入ソート
 def print_array(a):
     # * = unpacking operator
     print(*a)
