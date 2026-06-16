@@ -19,9 +19,22 @@ def factorize(n):
     return primes
 
 
+# n = int(input())
+# table = factorize(n)
+# for prime in table:
+#     exp = table[prime]
+#     for _ in range(exp):
+#         print(prime)
+# 整数を受け取り、約数の個数を返す関数
+def calcNumOfPrimeFactors(n):
+    primes = factorize(n)
+
+    numOfFactors = 1
+    for num in primes.values():
+        numOfFactors *= (num + 1)
+
+    return numOfFactors
+
 n = int(input())
-table = factorize(n)
-for prime in table:
-    exp = table[prime]
-    for _ in range(exp):
-        print(prime)
+numOfPrimeFactors = calcNumOfPrimeFactors(n)
+print(f"{n} の約数は {numOfPrimeFactors} 個")
